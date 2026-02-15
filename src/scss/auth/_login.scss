@@ -17,3 +17,55 @@
         }
     }
 }
+
+/* Botón Flotante del Chatbot */
+.btn-chatbot-flotante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 1.2rem 1.8rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 8px 25px rgba(8, 145, 178, 0.3);
+    transition: all 0.3s ease;
+    z-index: 100;
+    border: none;
+    cursor: pointer;
+
+    .icono {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .texto {
+        display: none;
+    }
+
+    &:hover {
+        background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+        box-shadow: 0 12px 35px rgba(8, 145, 178, 0.4);
+        transform: translateY(-4px) scale(1.05);
+    }
+
+    &:active {
+        transform: translateY(-2px);
+    }
+
+    @media (min-width: 768px) {
+        padding: 1.2rem 2.2rem;
+        bottom: 40px;
+        right: 40px;
+
+        .texto {
+            display: inline;
+        }
+    }
+}

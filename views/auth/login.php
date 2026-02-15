@@ -35,3 +35,9 @@
         </div>
     </div> <!--.contenedor-sm -->
 </div>
+
+<!-- Botón Flotante del Chatbot -->
+<a href="/chatbot" class="btn-chatbot-flotante" title="Hablar con TalkTrack Bot">
+    <span class="icono">💬</span>
+    <span class="texto">TalkTrack Bot</span>
+</a>

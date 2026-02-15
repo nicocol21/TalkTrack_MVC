@@ -6,6 +6,7 @@ use MVC\Router;
 use Controllers\LoginController;
 use Controllers\DashboardController;
 use Controllers\TareaController;
+use Controllers\ChatbotController;
 
 $router = new Router();
 
@@ -30,6 +31,8 @@ $router->post('/reestablecer', [LoginController::class, 'reestablecer']);
 $router->get('/mensaje', [LoginController::class, 'mensaje']);
 $router->get('/confirmar', [LoginController::class, 'confirmar']);
 
+// Chatbot
+$router->get('/chatbot', [ChatbotController::class, 'index']);
 
 // ZONA DE PROYECTOS
 $router->get('/dashboard', [DashboardController::class, 'index']);
