@@ -221,7 +221,7 @@
       return "Ve a la sección de registro, pon tu nombre, correo y contraseña. Luego confirma tu email y ¡listo!";
     }
     if (pregunta.includes("olvide") || pregunta.includes("contraseña")) {
-      return "Haz clic en "¿Olvidaste tu contraseña?" en la pantalla de login. Te llegará un enlace para restablecerla.";
+      return "Haz clic en \"¿Olvidaste tu contraseña?\" en la pantalla de login. Te llegará un enlace para restablecerla.";
     }
     if (pregunta.includes("seguro") || pregunta.includes("seguridad")) {
       return "Sí, es bastante seguro. Usa autenticación por usuario/contraseña y cada proyecto está protegido por dueño.";
@@ -230,7 +230,7 @@
       return "Divide las tareas grandes en pasos pequeños, pon fechas realistas y revisa tu progreso diario. ¡Funciona muy bien! 🚀";
     }
     if (pregunta.includes("tecnologia") || pregunta.includes("tecnologías")) {
-      return "Frontend: HTML5 + CSS3 + JavaScript\nBackend: PHP (MVC)\nBase de datos: MySQL";
+      return "Frontend: HTML5 + CSS3 + JavaScript\\nBackend: PHP (MVC)\\nBase de datos: MySQL";
     }
     if (pregunta.includes("datos") || pregunta.includes("base de datos")) {
       return "Todo se guarda en MySQL: usuarios, proyectos, tareas y comentarios.";
